@@ -1,0 +1,77 @@
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+body {
+    background: #fcfcfc;
+}
+
+svg {
+    width: 280px;
+    height: 200px;
+}
+
+.time_block {
+    display: inline-block;
+}
+
+path {
+    stroke: #fff;
+    fill: none;
+    stroke-dasharray: 0, 0;
+    stroke-width: 4;
+    -webkit-animation: dash 7s linear;
+            animation: dash 7s linear;
+}
+
+@-webkit-keyframes dash {
+  from{
+    stroke-dasharray: 105, 16;
+  }
+    to {
+        stroke-dasharray: 0, 0;
+        stroke-dashoffset: 1000;
+    }
+}
+
+@keyframes dash {
+  from{
+    stroke-dasharray: 105, 16;
+  }
+    to {
+        stroke-dasharray: 0, 0;
+        stroke-dashoffset: 1000;
+    }
+}
+
+.wrapper {
+    position: fixed;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    min-height: 100%;
+    display: table;
+    text-align: center;
+}
+
+.wrapper2 {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin-top: 27%;
+}
+
+.copy{
+  color:#191919;
+}
+
+
